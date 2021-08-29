@@ -1,0 +1,9 @@
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\bin\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.deps.json
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\bin\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\bin\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.pdb
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\obj\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.csproj.AssemblyReference.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\obj\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.AssemblyInfoInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\obj\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.AssemblyInfo.cs
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\obj\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.csproj.CoreCompileInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\obj\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.ViewModels\obj\Debug\netcoreapp2.1\BackendDioPrediction.ViewModels.pdb

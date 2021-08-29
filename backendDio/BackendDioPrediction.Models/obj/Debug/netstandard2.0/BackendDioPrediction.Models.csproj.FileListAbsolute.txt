@@ -1,0 +1,5 @@
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Models\bin\Debug\netstandard2.0\BackendDioPrediction.Models.deps.json
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Models\bin\Debug\netstandard2.0\BackendDioPrediction.Models.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Models\obj\Debug\netstandard2.0\BackendDioPrediction.Models.csprojAssemblyReference.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Models\obj\Debug\netstandard2.0\BackendDioPrediction.Models.AssemblyInfoInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Models\obj\Debug\netstandard2.0\BackendDioPrediction.Models.AssemblyInfo.cs

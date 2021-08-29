@@ -1,0 +1,9 @@
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\bin\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.deps.json
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\bin\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\bin\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.pdb
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\obj\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.csproj.AssemblyReference.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\obj\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.AssemblyInfoInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\obj\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.AssemblyInfo.cs
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\obj\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.csproj.CoreCompileInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\obj\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.HouseCommon\obj\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.pdb

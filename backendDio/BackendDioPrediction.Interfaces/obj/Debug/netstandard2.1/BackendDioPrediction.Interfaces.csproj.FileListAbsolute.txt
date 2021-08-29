@@ -1,0 +1,17 @@
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.Interfaces.deps.json
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.Interfaces.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.Interfaces.pdb
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.AssemblyInfoInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.AssemblyInfo.cs
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.csproj.CoreCompileInputs.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.pdb
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.csproj.AssemblyReference.cache
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.Models.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.Models.pdb
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\obj\Debug\netstandard2.1\BackendDioPrediction.Interfaces.csproj.CopyComplete
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.ViewModels.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.ViewModels.pdb
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\Context\kc_house_data.csv
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.dll
+D:\foids\ds\3.semestarHS\diplomski_rad\praktičniRad\programskikod\backendDio\BackendDioPrediction.Interfaces\bin\Debug\netstandard2.1\BackendDioPrediction.HouseCommon.pdb
