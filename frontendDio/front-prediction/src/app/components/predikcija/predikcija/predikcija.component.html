@@ -1,0 +1,100 @@
+<div class="container">
+  <h3 class="text-center py-2">Forma za procjenu vrijednosti nekretnina</h3>
+  <br />
+  <div class="row">
+    <form method="POST" [formGroup]= "predictionForm" class="col-md-8 justify-content-center align-items-center border border-3 border-secondary rounded p-2 obrub">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="bedrooms" class="col-sm-2 col-form-label">Broj soba</label>
+            <input formControlName="bedrooms" type="text"  class="form-control col-sm-3" id="bedrooms" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="bathrooms" class="col-sm-2 col-form-label">Broj kupaonica</label>
+          <input formControlName="bathrooms" type="text" class="form-control col-sm-3" id="bathrooms" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="sqftLiving" class="col-sm-2 col-form-label">SqftLiving</label>
+          <input formControlName="sqftLiving" type="text" class="form-control" id="sqftLiving" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="sqftLot" class="col-sm-2 col-form-label">SqftLot</label>
+          <input formControlName="sqftLot" type="text" class="form-control" id="sqftLot" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="floors" class="col-sm-2 col-form-label">Broj katova</label>
+          <input formControlName="floors" type="text" class="form-control" id="floors" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="views" class="col-sm-2 col-form-label">Zainteresiranost</label>
+          <select formControlName="view" id="views" class="form-control">
+            <option *ngFor="let item of viewNumbers" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group  col-md-6">
+          <label for="condition" class="col-sm-2 col-form-label">Stanje</label>
+          <select formControlName="condition" id="condition" class="form-control">
+            <option *ngFor="let item of conditionNumbers" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group  col-md-6">
+          <label for="grade" class="col-sm-2 col-form-label">Kvaliteta gradnje</label>
+          <select formControlName="grade" id="grade" class="form-control">
+            <option *ngFor="let item of gradeNumbers" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+            <label for="yearBuilt">Godina gradnje</label>
+            <input formControlName="yearBuilt" type="text" class="form-control" id="yearBuilt">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="yearRenovated">Godina renoviranja</label>
+            <input formControlName="yearRenovated" type="text" class="form-control" id="yearRenovated">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+            <label for="sqftAbove">sqftAbove</label>
+            <input formControlName="sqftAbove" type="text" class="form-control" id="sqftAbove">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="sqftBasement">sqftBasement</label>
+            <input formControlName="sqftBasement" type="text" class="form-control" id="sqftBasement">
+          </div>
+      </div>
+      <div class="row">
+        <button type="button" (click)="onSendDataToApi()" class=" btn btn-secondary btn-lg mt-3 mb-2">Procijeni vrijednost</button>
+      </div>
+    </form>
+    <div class="justify-content-center col-md-4 mx-auto ispis">
+      <p>Procjena vrijednosti nekretnine iznosi:</p>
+      <p class="iznos"><strong class="d-flex justify-content-center">{{houseValue | number : '1.2-2'}} ($USD)</strong></p>
+    </div>
+
+  </div>
+  <div>
+    <p>Kazalo pojmova:</p>
+    <ul>
+      <li><strong>sqftLiving</strong>: Kvadratna stopa unutarnjeg stambenog prostora unutar interijera (prostora namijenjenog za život)</li>
+      <li><strong>sqftLot</strong>: Kvadratna stopa kopnenog prostora</li>
+      <li><strong>sqftAbove</strong>: Kvadratna stopa unutarnjeg stambenog prostora iznad razine tla</li>
+      <li><strong>sqftBasement</strong>: Kvadratna stopa unutarnjeg stambenog prostora ispod razine tla</li>
+    </ul>
+  </div>
+</div>

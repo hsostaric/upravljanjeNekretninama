@@ -1,0 +1,109 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <label for="donjaCijena">Donja granica cijene</label>
+      <input id="donjaCijena"class="form-control" type="text" [(ngModel)]="donjaCijena" placeholder="Unesite donju granicu cijene" />
+    </div>
+    <div class="col-md-3">
+      <label for="gornjaCijena">Gornja granica cijene</label>
+      <input id="gornjaCijena" class="form-control"  type="text" [(ngModel)]="gornjaCijena" placeholder="Unesite gornju granicu cijene" />
+    </div>
+</div>
+<div class="row">
+  <div class="col-auto py-3">
+      <button type="button" class="btn btn-primary" (click) ="odradiPretragu()"> Pretraži</button>
+  </div>
+  <div class="col-auto py-3">
+    <button type="button" class="btn btn-danger" (click)="ponistiPretragu()" > Poništi pretragu</button>
+</div>
+</div>
+<div class="row">
+  <div class="form-group">
+    <button type="button"  class="btn btn-success" routerLink="/novi">Novi zapis</button>
+  </div>
+</div>
+
+  <div *ngIf='!loading && houses.length > 0;'>
+
+    <mat-table  matSort matSortActive="id" matSortDirection="asc" (matSortChange)="sortEvent =$event; onSortChange($event)" [dataSource]="houses">
+        <mat-header-row *matHeaderRowDef = "displayedColumns"></mat-header-row>
+        <mat-row *matRowDef ="let row; columns:displayedColumns"></mat-row>
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Id</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.id}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="price">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Cijena</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.price}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="bedrooms">
+          <mat-header-cell *matHeaderCellDef  mat-sort-header>Broj soba</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.bedrooms}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="bathrooms">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Broj kupaonica</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.bathrooms}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="sqftLot">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Sqft lot</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.sqftLot}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="condition">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Stanje</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.condition}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="grade">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Kvaliteta gradnje</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.grade}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="yearBuilt">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Godina gradnje</mat-header-cell>
+          <mat-cell *matCellDef="let row">{{row.yearBuilt}}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="detalji">
+          <mat-header-cell *matHeaderCellDef>Detalji</mat-header-cell>
+          <mat-cell *matCellDef="let row"><button mat-raised-button color="warn"  [routerLink]="['/detail', row.id]">Detalji</button></mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="brisanje">
+          <mat-header-cell *matHeaderCellDef>Briši</mat-header-cell>
+          <mat-cell *matCellDef="let row"><button mat-mini-fab color="primary" (click)="obrisiZapis(row.id)">
+            <mat-icon>delete</mat-icon>
+          </button></mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="edit">
+          <mat-header-cell *matHeaderCellDef>Uredi</mat-header-cell>
+          <mat-cell *matCellDef="let row"><button mat-mini-fab color="primary" [routerLink] ="['/edit', row.id]">
+            <mat-icon style="margin: 0 auto">edit</mat-icon>
+          </button></mat-cell>
+        </ng-container>
+    </mat-table>
+    <mat-paginator
+    [length]="totalCounts"
+    [pageSize] = "itemsPerPage"
+    [pageSizeOptions]="[1, 5, 25, 50, 100]"
+    (page)="pageEvent=$event; onPaginateChange($event)"
+    showFirstLastButtons>
+  </mat-paginator>
+</div>
+<div *ngIf="loading && houses.length===0">
+
+  <mat-spinner mode="indeterminate"></mat-spinner>
+</div>
+<div *ngIf="!loading && houses.length === 0">
+    <p class="alert alert-danger">Trenutno nema kuća u sustavu !</p>
+</div>
+<br/>
+
+
+
+
+</div>

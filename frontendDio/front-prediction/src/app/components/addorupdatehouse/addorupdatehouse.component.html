@@ -1,0 +1,100 @@
+<div class="container">
+  <h3 *ngIf="isAddMode" class="text-center py-2">Forma za unos novih nekretnina</h3>
+  <h3 *ngIf="!isAddMode" class="text-center py-2">Uređivanje nekretnine pod ID-om: {{id}}</h3>
+  <br />
+    <form method="POST" [formGroup]= "houseForm" class=" form  justify-content-center align-items-center border border-3 border-secondary rounded p-2 ">
+      <div class="row">
+        <div class="form-group ">
+          <label for="price" class="col-sm-2 col-form-label">Cijena ($)</label>
+            <input formControlName="price" type="text" name="price"  class="form-control " id="price" [(ngModel)] = "houseModel.price"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="bedrooms" class="col-sm-2 col-form-label">Broj soba</label>
+            <input formControlName="bedrooms" type="text" name="bedrooms" class="form-control col-sm-3" id="bedrooms" [(ngModel)] = "houseModel.bedrooms"/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="bathrooms" class="col-md-7 col-form-label">Broj kupaonica</label>
+          <input formControlName="bathrooms" type="text" name="bathrooms" class="form-control col-sm-3" id="bathrooms" [(ngModel)] = "houseModel.bathrooms"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="sqftLiving" class="col-sm-2 col-form-label">SqftLiving</label>
+          <input formControlName="sqftLiving" type="text" name="sqftLiving" class="form-control" id="sqftLiving" [(ngModel)] = "houseModel.sqftLiving" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="sqftLot" class="col-sm-2 col-form-label">SqftLot</label>
+          <input formControlName="sqftLot" type="text" name="sqftLot" class="form-control" id="sqftLot" [(ngModel)] = "houseModel.sqftLot"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="floors" class="col-sm-2 col-form-label">Broj katova</label>
+          <input formControlName="floors" type="text" name="floors" class="form-control" id="floors" [(ngModel)] = "houseModel.floors"/>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="views" class="col-sm-2 col-form-label">Zainteresiranost</label>
+          <select formControlName="view" id="views" name="views" class="form-control" [(ngModel)] = "houseModel.view" >
+            <option *ngFor="let item of viewNumbers" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group  col-md-6">
+          <label for="condition" class="col-sm-2 col-form-label">Stanje</label>
+          <select formControlName="condition" id="condition" name="condition" class="form-control" [(ngModel)] = "houseModel.condition" >
+            <option *ngFor="let item of conditionNumbers" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group  col-md-6">
+          <label for="grade" class="col-md-6 col-form-label">Kvaliteta gradnje</label>
+          <select formControlName="grade" name="grade" id="grade" class="form-control" [(ngModel)] = "houseModel.grade">
+            <option *ngFor="let item of gradeNumbers" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-6">
+            <label for="yearBuilt">Godina gradnje</label>
+            <input formControlName="yearBuilt" type="text" name="yearBuilt" class="form-control" id="yearBuilt" [(ngModel)] = "houseModel.yearBuilt">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="yearRenovated">Godina renoviranja</label>
+            <input formControlName="yearRenovated" type="text" name="yearRenovated" class="form-control" id="yearRenovated" [(ngModel)] = "houseModel.yearRenovated">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+            <label for="sqftAbove">sqftAbove</label>
+            <input formControlName="sqftAbove" type="text" class="form-control" id="sqftAbove" name="sqftAbove" [(ngModel)] = "houseModel.sqftAbove">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="sqftBasement">sqftBasement</label>
+            <input formControlName="sqftBasement" type="text" class="form-control" id="sqftBasement" name="sqftBasement" [(ngModel)] = "houseModel.sqftBasement">
+          </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <button type="button" (click)="odaradiOperaciju()" class="col-md-6 btn btn-secondary btn-md-4 mt-3 mb-2">{{buttonText}}</button>
+      </div>
+    </form>
+    <div>
+      <p>Kazalo pojmova:</p>
+      <ul>
+        <li><strong>sqftLiving</strong>: Kvadratna stopa unutarnjeg stambenog prostora unutar interijera (prostora namijenjenog za život)</li>
+        <li><strong>sqftLot</strong>: Kvadratna stopa kopnenog prostora</li>
+        <li><strong>sqftAbove</strong>: Kvadratna stopa unutarnjeg stambenog prostora iznad razine tla</li>
+        <li><strong>sqftBasement</strong>: Kvadratna stopa unutarnjeg stambenog prostora ispod razine tla</li>
+      </ul>
+    </div>
+</div>

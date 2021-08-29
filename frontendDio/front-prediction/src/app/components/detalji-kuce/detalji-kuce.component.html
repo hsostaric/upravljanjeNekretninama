@@ -1,0 +1,59 @@
+<div class="container">
+  <div id="login-row" class="row justify-content-center align-items-center">
+      <div>
+          <button class="btn btn-secondary btn-lg btn-block " name="nazad" (click)="nazad()">Nazad</button>
+          <div *ngIf="house">
+              <br/>
+              <h5 class="text-center naslov">Detalji nekretnine : {{house.id}}</h5>
+              <table class="table">
+                  <thead>
+                      <tr>
+                        <th scope="col">Redni broj</th>
+                        <th scope="col">Cijena</th>
+                        <th scope="col">Broj soba</th>
+                        <th scope="col">Broj kupaonica</th>
+                        <th scope="col">Sqft lot</th>
+                        <th scope="col">Sqft living</th>
+                        <th scope="col">Broj katova</th>
+                        <th scope="col">Zainteresiranost</th>
+                        <th scope="col">Stanje</th>
+                        <th scope="col">Razred</th>
+                        <th scope="col">Godina gradnje</th>
+                        <th scope="col">Godina renoviranja</th>
+                        <th scope="col">Sqft Above</th>
+                        <th scope="col">Sqft Basement</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>{{house.id}}</td>
+                        <td>{{house.price}}</td>
+                        <td>{{house.bedrooms}}</td>
+                        <td>{{house.bathrooms}}</td>
+                        <td>{{house.sqftLot}}</td>
+                        <td>{{house.sqftLiving}}</td>
+                        <td>{{house.floors}}</td>
+                        <td>{{house.view}}</td>
+                        <td>{{house.condition}}</td>
+                        <td>{{house.grade}}</td>
+                        <td>{{house.yearBuilt}}</td>
+                        <td>{{house.yearRenovated}}</td>
+                        <td>{{house.sqftAbove}}</td>
+                        <td>{{house.sqftBasement}}</td>
+                      </tr>
+              </table>
+              <br>
+              <div>
+                <p>Kazalo pojmova:</p>
+                <ul>
+                  <li><strong>sqftLiving</strong>: Kvadratna stopa unutarnjeg stambenog prostora unutar interijera (prostora namijenjenog za život)</li>
+                  <li><strong>sqftLot</strong>: Kvadratna stopa kopnenog prostora</li>
+                  <li><strong>sqftAbove</strong>: Kvadratna stopa unutarnjeg stambenog prostora iznad razine tla</li>
+                  <li><strong>sqftBasement</strong>: Kvadratna stopa unutarnjeg stambenog prostora ispod razine tla</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
